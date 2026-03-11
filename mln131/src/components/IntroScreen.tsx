@@ -7,6 +7,15 @@ interface IntroScreenProps {
 export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
   return (
     <div className="intro-screen">
+      {/* Revolutionary 3D decorations */}
+      <div className="intro-deco star-tl">★</div>
+      <div className="intro-deco star-tr">★</div>
+      <div className="intro-deco star-bl">★</div>
+      <div className="intro-deco star-br">★</div>
+      <div className="intro-deco hammer-l">☭</div>
+      <div className="intro-deco hammer-r">☭</div>
+      <div className="intro-deco flag-left"></div>
+      <div className="intro-deco flag-right"></div>
       <div className="intro-content">
         <div className="hero-image">
           <img 

@@ -28,6 +28,17 @@ const resultConfig = {
   },
 };
 
+const galleryImages = [
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+  'https://i.ibb.co/DPPyZY2t/2cd18f16-7a16-44d0-85ec-9939d254489b-1.jpg',
+];
+
 export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart }) => {
   const config = resultConfig[result.resultLevel];
 
@@ -46,6 +57,12 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
         </h2>
 
         <p className="result-message">{config.message}</p>
+
+        <div className="result-gallery">
+          <div className="gallery-single">
+            <img src={galleryImages[0]} alt="Hình ảnh minh họa" loading="lazy" />
+          </div>
+        </div>
 
         <div className="result-stats">
           <div className="result-stat-card">

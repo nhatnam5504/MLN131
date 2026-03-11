@@ -5,6 +5,7 @@ import { QuestionCard } from './components/QuestionCard';
 import { StageComplete } from './components/StageComplete';
 import { ResultScreen } from './components/ResultScreen';
 import { SocialIndicators } from './components/SocialIndicators';
+import { gameStages } from './data/questions';
 
 function App() {
   const {
@@ -52,6 +53,7 @@ function App() {
                       }`}
                     >
                       <span className="stage-number">{i + 1}</span>
+                      <span className="stage-label">{gameStages[i].title}</span>
                     </div>
                   ))}
                 </div>
