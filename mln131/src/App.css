@@ -1434,6 +1434,9 @@ body::after {
 
   /* ── INTRO SCREEN ── */
   .intro-screen {
+    height: auto;
+    min-height: auto;
+    overflow: visible;
     align-items: flex-start;
     padding: 0.5rem;
   }
