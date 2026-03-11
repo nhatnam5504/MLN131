@@ -1141,7 +1141,7 @@ body::after {
   object-fit: cover;
 }
 
-
+.result-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
