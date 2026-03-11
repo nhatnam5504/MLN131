@@ -53,7 +53,10 @@ function App() {
                       }`}
                     >
                       <span className="stage-number">{i + 1}</span>
-                      <span className="stage-label">{gameStages[i].title}</span>
+                      <div className="stage-info">
+                        <span className="stage-name">Màn {i + 1}</span>
+                        <span className="stage-context">{gameStages[i].title}</span>
+                      </div>
                     </div>
                   ))}
                 </div>
