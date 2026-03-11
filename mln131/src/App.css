@@ -1541,14 +1541,26 @@ body::after {
     font-size: 0.65rem;
   }
 
-  /* Game content */
-  .game-content {
+  /* Game content — remove all fixed heights so page can scroll */
+  .game-container {
+    max-height: none;
     height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .game-main {
     overflow: visible;
+    height: auto;
   }
 
   .question-card {
+    height: auto;
+    overflow: visible;
     padding: 1rem 0.8rem;
+  }
+
+  .answers-container {
+    overflow: visible;
   }
 
   .question-number {
