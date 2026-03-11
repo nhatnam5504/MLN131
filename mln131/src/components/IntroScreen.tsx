@@ -14,6 +14,12 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
       <div className="intro-corner corner-br"></div>
 
       <div className="intro-content">
+        <button className="start-button" onClick={onStart}>
+          <span className="button-star">★</span>
+          <span>Bắt đầu</span>
+          <span className="button-star">★</span>
+        </button>
+
         <div className="hero-image">
           <img
             src="https://kinhtevadubao.vn/stores/news_dataimages/hoenh/052023/31/16/ly-luan-ve-thoi-ky-qua-do-len-chu-nghia-xa-hoi-o-viet-nam-tu-di-san-vo-gia-cua-chu-tich-ho-chi-minh-den-ly-luan-sau-sac-cua-tong-bi-thu-nguyen-phu-trong_2.jpg?rt=20230531163300"
@@ -45,12 +51,6 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
             <span>Bonus x3</span>
           </div>
         </div>
-
-        <button className="start-button" onClick={onStart}>
-          <span className="button-star">★</span>
-          <span>Bắt đầu</span>
-          <span className="button-star">★</span>
-        </button>
       </div>
     </div>
   );
