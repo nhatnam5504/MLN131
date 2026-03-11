@@ -106,7 +106,7 @@ function App() {
       </header>
       <main className="app-main">{renderContent()}</main>
       <footer className="app-footer">
-        <p>Project Triết 3 - Liên minh giai cấp và đấu tranh giai cấp trong thời kỳ quá độ</p>
+        <p>MLN131 - Liên minh giai cấp và đấu tranh giai cấp trong thời kỳ quá độ</p>
       </footer>
     </div>
   );

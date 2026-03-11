@@ -8,58 +8,40 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
   return (
     <div className="intro-screen">
       <div className="intro-content">
-        <div className="game-badge">Trò chơi học thuật</div>
+        <div className="hero-image">
+          <img 
+            src="https://kinhtevadubao.vn/stores/news_dataimages/hoenh/052023/31/16/ly-luan-ve-thoi-ky-qua-do-len-chu-nghia-xa-hoi-o-viet-nam-tu-di-san-vo-gia-cua-chu-tich-ho-chi-minh-den-ly-luan-sau-sac-cua-tong-bi-thu-nguyen-phu-trong_2.jpg?rt=20230531163300" 
+            alt="Thời kỳ quá độ lên CNXH"
+          />
+        </div>
+        
+        <div className="game-badge">🎓 Triết học Mác-Lênin</div>
         <h1 className="game-title">
-          Liên minh giai cấp và đấu tranh giai cấp
-          <span className="subtitle">trong thời kỳ quá độ</span>
+          Liên minh & Đấu tranh giai cấp
+          <span className="subtitle">Thời kỳ quá độ lên CNXH</span>
         </h1>
 
-        <div className="intro-description">
-          <p>
-            Chào mừng bạn đến với trò chơi học thuật về chủ đề "Liên minh giai cấp
-            và đấu tranh giai cấp trong thời kỳ quá độ". Bạn sẽ đóng vai một nhà
-            hoạch định chính sách xã hội.
-          </p>
-        </div>
+        <p className="intro-description">
+          Khám phá vai trò của liên minh công - nông - trí thức và bản chất đấu tranh giai cấp trong xây dựng CNXH tại Việt Nam.
+        </p>
 
         <div className="game-info">
           <div className="info-card">
-            <div className="info-icon">📚</div>
-            <div className="info-text">
-              <h3>5 Màn chơi</h3>
-              <p>Từ bối cảnh đến so sánh lịch sử</p>
-            </div>
+            <span className="info-icon">📚</span>
+            <span>5 Màn chơi</span>
           </div>
-
           <div className="info-card">
-            <div className="info-icon">⭐</div>
-            <div className="info-text">
-              <h3>Hệ thống điểm</h3>
-              <p>+10 đúng, -5 sai, bonus liên tiếp</p>
-            </div>
+            <span className="info-icon">⭐</span>
+            <span>+10/-5 điểm</span>
           </div>
-
           <div className="info-card">
-            <div className="info-icon">📊</div>
-            <div className="info-text">
-              <h3>4 Chỉ số xã hội</h3>
-              <p>Đoàn kết, Ổn định, Công bằng, Nhận thức</p>
-            </div>
+            <span className="info-icon">🔥</span>
+            <span>Bonus x3</span>
           </div>
-        </div>
-
-        <div className="scoring-rules">
-          <h3>Cách tính điểm</h3>
-          <ul>
-            <li>✓ Trả lời đúng: <strong>+10 điểm</strong></li>
-            <li>✗ Trả lời sai: <strong>-5 điểm</strong></li>
-            <li>🎯 Hoàn thành một màn: <strong>+20 điểm</strong></li>
-            <li>🔥 3 câu đúng liên tiếp: <strong>+10 điểm bonus</strong></li>
-          </ul>
         </div>
 
         <button className="start-button" onClick={onStart}>
-          <span>Bắt đầu trò chơi</span>
+          <span>Bắt đầu</span>
           <span className="button-icon">→</span>
         </button>
       </div>

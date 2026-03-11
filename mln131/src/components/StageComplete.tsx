@@ -31,24 +31,18 @@ export const StageComplete: React.FC<StageCompleteProps> = ({
       <div className="completion-stats">
         <div className="stat-item">
           <span className="stat-icon">⭐</span>
-          <span className="stat-label">Điểm hoàn thành màn</span>
           <span className="stat-value">+20</span>
         </div>
         <div className="stat-item total">
           <span className="stat-icon">🏆</span>
-          <span className="stat-label">Tổng điểm hiện tại</span>
           <span className="stat-value">{score}</span>
         </div>
       </div>
 
       {nextStage && (
         <div className="next-stage-preview">
-          <h3>Màn tiếp theo</h3>
-          <div className="preview-card">
-            <div className="preview-badge">Màn {nextStage.id}</div>
-            <h4>{nextStage.title}</h4>
-            <p>{nextStage.description}</p>
-          </div>
+          <span className="preview-badge">Màn {nextStage.id}:</span>
+          <span className="preview-title">{nextStage.title}</span>
         </div>
       )}
 

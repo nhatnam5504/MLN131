@@ -11,19 +11,19 @@ const resultConfig = {
   excellent: {
     title: 'Xuất sắc!',
     icon: '🏆',
-    message: 'Bạn đã hiểu rõ vai trò của liên minh giai cấp và nội dung đấu tranh giai cấp hiện nay.',
+    message: 'Bạn nắm vững kiến thức về liên minh và đấu tranh giai cấp.',
     color: '#4CAF50',
   },
   average: {
-    title: 'Trung bình',
+    title: 'Khá tốt',
     icon: '📚',
-    message: 'Bạn đã hiểu một phần nội dung. Hãy ôn lại để nắm vững hơn.',
+    message: 'Bạn đã hiểu một phần. Hãy ôn lại để nắm vững hơn.',
     color: '#FF9800',
   },
   'needs-improvement': {
-    title: 'Cần cố gắng thêm',
+    title: 'Cần cố gắng',
     icon: '📖',
-    message: 'Bạn cần học lại nội dung lý luận để hiểu rõ hơn về liên minh giai cấp và đấu tranh giai cấp.',
+    message: 'Bạn cần học lại để hiểu rõ hơn nội dung lý luận.',
     color: '#f44336',
   },
 };
@@ -83,13 +83,12 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
         </div>
 
         <div className="knowledge-summary">
-          <h3>Kiến thức đã học</h3>
+          <h3>Nội dung chính</h3>
           <ul>
-            <li>✓ Đặc điểm xã hội Việt Nam trong thời kỳ quá độ</li>
-            <li>✓ Mục đích và ý nghĩa của liên minh giai cấp</li>
-            <li>✓ Mối quan hệ giữa liên minh và đấu tranh giai cấp</li>
-            <li>✓ Nội dung đấu tranh giai cấp hiện nay</li>
-            <li>✓ So sánh nhận thức trước 1980 và hiện nay</li>
+            <li>✓ Thời kỳ quá độ lên CNXH</li>
+            <li>✓ Liên minh công - nông - trí thức</li>
+            <li>✓ Quan hệ liên minh & đấu tranh</li>
+            <li>✓ Đấu tranh giai cấp hiện nay</li>
           </ul>
         </div>
 
